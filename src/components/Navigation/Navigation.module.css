@@ -1,0 +1,34 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 4.375rem;
+    position: relative;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: black;
+    padding: 1.385rem  1.275rem;
+}
+
+.nav ul li a:hover{
+    color: rgb(62, 71, 158);
+    transition: 0.5s;
+}
+
+.nav img{
+    height: 7.5rem;
+    object-fit: cover;
+    position: absolute;
+    top: -25%;
+    z-index: -1;
+}

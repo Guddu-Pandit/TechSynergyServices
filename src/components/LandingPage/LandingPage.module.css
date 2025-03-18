@@ -1,0 +1,25 @@
+.landing{
+    height: 80vh;
+    overflow-y: hidden!important;
+    background-color:rgb(255, 243, 221);
+}
+.landing .hero_img img{
+    height: 80vh;
+    float: right;
+    padding-right: .9375rem;
+}
+ .hero_text p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.875rem;
+    height: 80vh;
+    padding: 0 4.375rem;
+}
+.slick-slide > div{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
