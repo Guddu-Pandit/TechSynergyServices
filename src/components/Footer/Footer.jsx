@@ -1,12 +1,8 @@
 import styles from "./Footer.module.css";
 import React from "react";
-import { FaFacebook } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaPhone } from "react-icons/fa6";
+import { FaLinkedin , FaInstagram } from "react-icons/fa";
+import { FaXTwitter, FaFacebook, FaPhone, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (

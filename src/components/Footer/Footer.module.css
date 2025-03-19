@@ -17,9 +17,12 @@
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-.box i{
+.box a i{
     justify-content: center;
     align-items: center;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    color: #ffffff;
 }
 .box{
     flex: 1 1 10rem;
