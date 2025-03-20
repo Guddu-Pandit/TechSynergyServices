@@ -1,7 +1,12 @@
 import styles from "./Footer.module.css";
 import React from "react";
-import { FaLinkedin , FaInstagram } from "react-icons/fa";
-import { FaXTwitter, FaFacebook, FaPhone, FaLocationDot } from "react-icons/fa6";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import {
+  FaXTwitter,
+  FaFacebook,
+  FaPhone,
+  FaLocationDot,
+} from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
@@ -76,12 +81,17 @@ const Footer = () => {
               <i>
                 <FaLocationDot />
               </i>
-              <p>Guar City Mall, Greater Noida West,<br />India - 201318</p>
+              <p>
+                Guar City Mall, Greater Noida West,
+                <br />
+                India - 201318
+              </p>
             </div>
           </div>
-          <h2 className={styles.credit}>&copy; Copyright TECH-SYNERGY.
-          All Rights Reserved Designed by
-          Team TECH-SYNERGY</h2>
+          <h2 className={styles.credit}>
+            &copy; Copyright TECH-SYNERGY. All Rights Reserved Designed by Team
+            TECH-SYNERGY
+          </h2>
         </div>
       </footer>
     </div>
