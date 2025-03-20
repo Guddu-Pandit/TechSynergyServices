@@ -1,3 +1,4 @@
+// aimport { NavLink } from 'react-router-dom'
 import styles from './Navigation.module.css'
 
 const Navigation = () => {
@@ -8,10 +9,10 @@ const Navigation = () => {
                 <img src="./Images/logo1.jpeg" alt="logo" />
             </div>
                 <ul>
-                    <li><a href="https://www.google.com/">Home</a></li>
-                    <li><a href="https://www.google.com/">About</a></li>
-                    <li><a href="https://www.google.com/">Training & Internship</a></li>
-                    <li><a href="https://www.google.com/">Contact</a></li>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Training & Internsa</a></li>
+                    <li><a >Contact</a></li>
                 </ul>     
         </nav>
     </div>

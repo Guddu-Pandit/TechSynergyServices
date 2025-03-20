@@ -12,6 +12,9 @@
     justify-items: center;
     cursor: pointer;
 }
+.isActive{
+    color: rgb(62, 71, 158);
+}
 
 .nav ul li a{
     text-decoration: none;
@@ -22,7 +25,6 @@
 
 .nav ul li a:hover{
     color: rgb(62, 71, 158);
-    transition: 0.5s;
 }
 
 .nav img{

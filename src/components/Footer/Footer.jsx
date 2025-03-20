@@ -1,12 +1,7 @@
 import styles from "./Footer.module.css";
 import React from "react";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import {
-  FaXTwitter,
-  FaFacebook,
-  FaPhone,
-  FaLocationDot,
-} from "react-icons/fa6";
+import {  FaXTwitter,FaFacebook, FaPhone,FaLocationDot} from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
@@ -34,33 +29,13 @@ const Footer = () => {
           </div>
           <div className={styles.box}>
             <h3>follow us</h3>
-            <a href="#">
-              <i>
-                <FaFacebook />
-              </i>
-              Facebook
-            </a>
-            <a href="#">
-              <i>
-                <FaInstagram />
-              </i>
-              Instagram
-            </a>
-            <a href="https://www.linkedin.com/company/techsynergy-services-pvt-ltd">
-              <i>
-                <FaLinkedin />
-              </i>
-              LinkedIn
-            </a>
-            <a href="#">
-              <i>
-                <FaXTwitter />
-              </i>
-              Twitter
-            </a>
+            <a href="#"><i><FaFacebook /></i>Facebook</a>
+            <a href="#"><i><FaInstagram /></i>Instagram</a>
+            <a href="https://www.linkedin.com/company/techsynergy-services-pvt-ltd"><i><FaLinkedin /></i>LinkedIn</a>
+            <a href="#"><i><FaXTwitter /></i>Twitter</a>
           </div>
           <div className={styles.box}>
-            <h3>Contact info</h3>
+            <h3>Let's Connect !</h3>
             <div className={styles.info}>
               <i>
                 <FaPhone />

@@ -1,0 +1,53 @@
+.testimonials {
+    /* background-color: #000000; */
+    padding: 3rem 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin-top: 2.75rem;
+    gap: 2rem;
+    flex-direction: row;
+    border: 1px solid #ff0000;
+}
+
+.box{
+    background-color: rgb(201, 180, 155);
+    height: 15rem;
+    color: #333;
+    margin: 0 20rem;
+    border: 1px solid #04f428;
+}   
+.box div img {
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.box div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 20px;
+}
+.box p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    padding: 2rem;
+    display: flex;
+    margin-top: .5rem;
+    text-align: center;
+}
+.slick-slide > div{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
