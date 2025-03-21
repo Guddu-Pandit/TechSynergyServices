@@ -11,7 +11,7 @@ const Navigation = () => {
                 <ul>
                     <li><a>Home</a></li>
                     <li><a>About</a></li>
-                    <li><a>Training & Internsa</a></li>
+                    <li><a>Training & Internship</a></li>
                     <li><a >Contact</a></li>
                 </ul>     
         </nav>

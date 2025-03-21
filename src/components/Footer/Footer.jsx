@@ -36,12 +36,12 @@ const Footer = () => {
           </div>
           <div className={styles.box}>
             <h3>Let's Connect !</h3>
-            <div className={styles.info}>
+            {/* <div className={styles.info}>
               <i>
                 <FaPhone />
               </i>
               <p>+91 1234567890</p>
-            </div>
+            </div> */}
             <div className={styles.info}>
               <i>
                 <MdEmail />
