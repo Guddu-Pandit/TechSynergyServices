@@ -1,53 +1,69 @@
 .testimonials {
-    /* background-color: #000000; */
-    padding: 3rem 0;
+  height: auto;
+  overflow-y: hidden!important;
+  padding-bottom: 5rem;
+  background-color: #f3f3f3;
 }
-
-.content {
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-    margin-top: 2.75rem;
-    gap: 2rem;
-    flex-direction: row;
-    border: 1px solid #ff0000;
+.container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  width: 60%;
+  box-shadow: #d2d2d2 0 0 .8rem;
+  background-color: #f3f3f3;
 }
-
-.box{
-    background-color: rgb(201, 180, 155);
-    height: 15rem;
-    color: #333;
-    margin: 0 20rem;
-    border: 1px solid #04f428;
-}   
-.box div img {
-    height: 3.75rem;
-    width: 3.75rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-}
-.box div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 1rem;
-    gap: 20px;
-}
-.box p {
-    font-size: 1rem;
+.Heading h2{
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
     font-weight: 500;
-    color: #333;
-    padding: 2rem;
-    display: flex;
-    margin-top: .5rem;
     text-align: center;
 }
-.slick-slide > div{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(0, 0, 0);
+
+.Heading p {
+    font-size: 1.1rem;
+    color: #737373;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.upperbox p{
+  color: #5a5a5a;
+  text-align: center;
+  margin: 1rem auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lowerbox {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+.lowerbox img {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+.lowerbox h4{
+  font-size: 1rem;
+  color: #474747;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

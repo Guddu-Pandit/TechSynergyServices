@@ -42,8 +42,8 @@ const LandingPage = () => {
   return (
     <div>
         <Slider {...settings}>
-      {data.map((d, index) => (
-        <div key={index} className={`${styles.landing}`}>
+      {data.map((d) => (
+        <div key={d.index} className={`${styles.landing}`}>
           <div className={styles.hero_img}>
             <img src={d.img} alt="model1" />
           </div>

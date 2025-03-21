@@ -6,36 +6,79 @@ import 'slick-carousel/slick/slick-theme.css'
 
 const data = [
   {
+    id: 1,
     name: 'John Doe',
     img: '/Images/user1.jpg',
     review: 'I had a great experience with Tech Academy. The instructors were very knowledgeable and supportive. I learned a lot and was able to land a job as a software engineer after completing the program.'
   },
   {
+    id: 2,
     name: 'John Doe',
     img: '/Images/user2.jpg',
     review: 'I had a great experience with Tech Academy. The instructors were very knowledgeable and supportive. I learned a lot and was able to land a job as a software engineer after completing the program.'
   },
   {
+    id: 3,
     name: 'John Doe',
     img: '/Images/user1.jpg',
     review: 'I had a great experience with Tech Academy. The instructors were very knowledgeable and supportive. I learned a lot and was able to land a job as a software engineer after completing the program.'
   },
   {
+    id: 4,
+    name: 'John Doe',
+    img: '/Images/user2.jpg',
+    review: 'I had a great experience with Tech Academy. The instructors were very knowledgeable and supportive. I learned a lot and was able to land a job as a software engineer after completing the program.'
+  },
+  {
+    id: 5,
+    name: 'John Doe',
+    img: '/Images/user1.jpg',
+    review: 'I had a great experience with Tech Academy. The instructors were very knowledgeable and supportive. I learned a lot and was able to land a job as a software engineer after completing the program.'
+  },
+  {
+    id: 6,
     name: 'John Doe',
     img: '/Images/user2.jpg',
     review: 'I had a great experience with Tech Academy. The instructors were very knowledgeable and supportive. I learned a lot and was able to land a job as a software engineer after completing the program.'
   },
 ]
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "#d8d8d8", borderRadius: "50%",  }}
+      onClick={onClick}
+    />
+  );
+}
+
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "#d8d8d8", borderRadius: "50%",}}
+      onClick={onClick}
+    />
+  );
+}
+
 
 const Testimonials = () => {
   const settings = {
-    accessibility:true,
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: false,
   };
   return (
     <div className={styles.testimonials}>
@@ -44,20 +87,22 @@ const Testimonials = () => {
             <p>Hear from our graduates who have successfully transitioned into the tech industry 
               after completing our training and internship programs.</p>
         </div>
+
+        <div className={styles.container}>
         <Slider {...settings}>
-          <div className={styles.content}>
-            
-            {data.map((d, index) => (
-              <div key={index} className={styles.box}>
+          {data.map((d) => (
+            <div key={d.index} className={styles.box}>
+              <div className={styles.upperbox}>
                 <p>{d.review}</p>
-                <div >
-                  <img src={d.img} />
-                <h4>{d.name}</h4>
-                </div>
               </div>
-            ))}
+              <div className={styles.lowerbox}>
+               <img src={d.img} alt="User"/>
+               <h4>{d.name}</h4>
+              </div>
             </div>
+          ))}
         </Slider>
+        </div>
     </div>
   )
 }
