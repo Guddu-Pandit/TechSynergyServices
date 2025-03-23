@@ -9,22 +9,17 @@
     color: #000000;
     margin-bottom: 1rem;
     margin-top: 5rem;
-    justify-content: center;
-    align-items: center;
     font-weight: 500;
-    display: flex;
+    text-align: center;
 }
 .service p{
     font-size: 1.1rem;
     color: #737373;
-    margin-bottom: 1rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
 }
-.service .para{
-    margin-top: -1rem;
-}
+
 .row{
     display: flex;
     justify-content: space-evenly;

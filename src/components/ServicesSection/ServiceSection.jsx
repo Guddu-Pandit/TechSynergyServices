@@ -65,10 +65,9 @@ const ServiceSection = () => {
         <h2>Comprehensive IT Training & Services</h2>
         <p>
           Our programs combine theoretical knowledge with practical 
-          implementation, 
+          implementation, preparing you for real-world challenges in the tech
+          industry.
         </p>
-        <p className={styles.para}>preparing you for real-world challenges in the tech
-        industry.</p>
         </div>
         <div className={styles.row}>
           {service.map((service, index) => (

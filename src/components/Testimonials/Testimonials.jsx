@@ -39,7 +39,7 @@ const data = [
     id: 6,
     name: 'John Doe',
     img: '/Images/user2.jpg',
-    review: 'I had a great experience with Tech Academy. The instructors were very knowledgeable and supportive. I learned a lot and was able to land a job as a software engineer after completing the program.'
+    review: "The program's curriculum is perfectly aligned with industry needs. I was able to immediately apply what I learned to solve real problems during my internship."
   },
 ]
 
