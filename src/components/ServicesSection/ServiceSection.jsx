@@ -1,7 +1,7 @@
 import styles from "./ServiceSection.module.css";
 import React from "react";
 import { IoMdCode } from "react-icons/io";
-import { LuLaptop, LuServer } from "react-icons/lu"; // Corrected imports
+import { LuLaptop, LuServer } from "react-icons/lu"; 
 import { BsGraphUp } from "react-icons/bs";
 import { GrCertificate } from "react-icons/gr";
 import { FiBriefcase } from "react-icons/fi";
@@ -20,7 +20,7 @@ const ServiceSection = () => {
       title: "Software Engineering",
       description:
         "Learn industry-standard methodologies, tools, and frameworks to design, develop, and deploy scalable software solutions.",
-      icon: <LuLaptop />, // Corrected icon
+      icon: <LuLaptop />, 
     },
     {
       title: "Data Science",
@@ -32,7 +32,7 @@ const ServiceSection = () => {
       title: "Cloud Computing",
       description:
         "Get hands-on experience with AWS, Azure, and Google Cloud platforms to architect and deploy cloud-native applications.",
-      icon: <LuServer />, // Corrected icon
+      icon: <LuServer />, 
     },
     {
       title: "Cybersecurity",
@@ -70,8 +70,8 @@ const ServiceSection = () => {
         </p>
         </div>
         <div className={styles.row}>
-          {service.map((service, index) => (
-            <div key={index} className={styles.box}>
+          {service.map((service) => (
+            <div key={service.index} className={styles.box}>
               <i className={styles.icon}>{service.icon}</i>
               <div>
               <h3>{service.title}</h3>
