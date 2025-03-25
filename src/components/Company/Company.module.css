@@ -1,0 +1,37 @@
+.cmp{
+    height: 80vh;
+}
+.Heading h2{
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.Heading p {
+    font-size: 1.1rem;
+    color: #737373;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container{
+    width: 73%;
+    margin: 6rem auto;
+}
+.box {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    /* border: #dbdbdb 1px solid; */
+    margin: 0 auto;
+    width: auto;
+}
+.box img{
+    height: 6.2rem;
+    width: 10rem;
+    object-fit: cover;
+    box-shadow: 0 .4375rem 1.1875rem rgb(210, 210, 210);
+}

@@ -5,7 +5,9 @@ import Border from './components/Border/Border.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import ServiceSection from './components/ServicesSection/ServiceSection.jsx'
 import Testimonials from './components/Testimonials/Testimonials.jsx'
-// import { Outlet } from 'react-router-dom'
+import ContactUs from './components/ContactUs/ContactUs.jsx'
+import { Company } from './components/Company/Company.jsx'
+
 
 function App() {
 
@@ -16,7 +18,8 @@ function App() {
     <Border/>
     <ServiceSection/>
     <Testimonials/>
-    {/* <Outlet/> */}
+    <ContactUs/>
+    <Company/>
     <Footer/>
   </>
   )
