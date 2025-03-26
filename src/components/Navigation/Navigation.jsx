@@ -1,7 +1,12 @@
 // import { NavLink } from 'react-router-dom'
 import styles from './Navigation.module.css'
+import { useState } from 'react'
+import { MdMenu } from "react-icons/md";
+
+
 
 const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
         <nav className={`${styles.nav} container`}>
@@ -13,7 +18,8 @@ const Navigation = () => {
                     <li><a>About</a></li>
                     <li><a>Training & Internship</a></li>
                     <li><a >Contact</a></li>
-                </ul>     
+                </ul>  
+                <button className="menubtn" onClick={() => setIsOpen(!isOpen)}><MdMenu/></button>   
         </nav>
     </div>
   )

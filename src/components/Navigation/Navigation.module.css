@@ -12,6 +12,13 @@
     justify-items: center;
     cursor: pointer;
 }
+.nav button{
+    display: none;
+    font-size: 2rem;
+    width: 4rem;
+    background-color: white;
+    border: none;
+}
 .isActive{
     color: rgb(62, 71, 158);
 }

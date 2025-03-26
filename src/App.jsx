@@ -18,7 +18,7 @@ function App() {
     <Border/>
     <ServiceSection/>
     <Testimonials/>
-    <ContactUs/>
+    {/* <ContactUs/> */}
     <Company/>
     <Footer/>
   </>
