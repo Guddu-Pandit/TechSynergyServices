@@ -14,10 +14,10 @@ const Navigation = () => {
                 <img src="./Images/logo1.jpeg" alt="logo" />
             </div>
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Training & Internship</a></li>
-                    <li><a >Contact</a></li>
+                    <li><a href='/'>Home</a></li>
+                    <li><a href='/about'> About</a></li>
+                    <li><a href='/training'>Training & Internship</a></li>
+                    <li><a href='/contact'>Contact</a></li>
                 </ul>  
                 <button className="menubtn" onClick={() => setIsOpen(!isOpen)}><MdMenu/></button>   
         </nav>

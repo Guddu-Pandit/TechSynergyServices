@@ -1,27 +1,24 @@
-import Navigation from './components/Navigation/Navigation.jsx'
-import LandingPage from './components/LandingPage/LandingPage.jsx'
+
 import './App.css'
-import Border from './components/Border/Border.jsx'
-import Footer from './components/Footer/Footer.jsx'
-import ServiceSection from './components/ServicesSection/ServiceSection.jsx'
-import Testimonials from './components/Testimonials/Testimonials.jsx'
-import ContactUs from './components/ContactUs/ContactUs.jsx'
-import { Company } from './components/Company/Company.jsx'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Landing from './pages/Landing.jsx'
+import About from './pages/About.jsx'
+import Layout from './provider/layout.jsx'
 
 
 function App() {
 
   return (
-  <>
-    <Navigation />
-    <LandingPage/>
-    <Border/>
-    <ServiceSection/>
-    <Testimonials/>
-    {/* <ContactUs/> */}
-    <Company/>
-    <Footer/>
-  </>
+    <Layout>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/training" element={<Landing/>}/>
+          <Route path="/contact" element={<Landing/>}/>
+        </Routes>
+      </BrowserRouter>
+    </Layout>
   )
 }
 

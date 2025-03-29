@@ -24,3 +24,12 @@
     align-items: center;
     font-size: 2rem;
 }
+
+@media (max-width: 800px){
+    .border{
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+        padding: 2rem 0rem;
+    }
+}

@@ -55,18 +55,60 @@ const data = [
   }
 
 export const Company = () => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        nextArrow: <SampleNextArrow />,
+    // const settings = {
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 5,
+    //     slidesToScroll: 1,
+    //     nextArrow: <SampleNextArrow />,
+    //     prevArrow: <SamplePrevArrow />,
+    //     autoplay: true,
+    //     autoplaySpeed: 4000,
+    //     pauseOnHover: false,
+    //   };
+
+
+    var settings = {
+      dots: true,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         autoplay: true,
         autoplaySpeed: 4000,
         pauseOnHover: false,
-      };
+      responsive: [
+        {
+          breakpoint: 1046,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
+
 
   return (
     <div className={styles.Cmp}>
@@ -87,3 +129,5 @@ export const Company = () => {
 </div>
   )
 }
+
+export default Company

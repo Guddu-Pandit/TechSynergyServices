@@ -14,11 +14,8 @@
 }
 .nav button{
     display: none;
-    font-size: 2rem;
-    width: 4rem;
-    background-color: white;
-    border: none;
 }
+
 .isActive{
     color: rgb(62, 71, 158);
 }
@@ -40,4 +37,20 @@
     position: absolute;
     top: -25%;
     z-index: -1;
+}
+
+@media(max-width: 800px){
+    .nav button{
+        display: inline;
+        font-size: 2rem;
+        width: 4rem;
+        background-color: white;
+        border: none;
+    }   
+}
+
+@media (max-width : 800px){
+    .nav ul {
+        display: none;
+    }
 }

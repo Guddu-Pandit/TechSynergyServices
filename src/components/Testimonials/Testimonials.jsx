@@ -7,20 +7,20 @@ import 'slick-carousel/slick/slick-theme.css'
 const data = [
   {
     id: 1,
-    name: 'John Doe',
-    img: '/Images/user1.jpg',
+    name: 'Riya',
+    img: '/Images/riya.jpeg',
     review: 'I had a great experience with Tech Academy. The instructors were very knowledgeable and supportive. I learned a lot and was able to land a job as a software engineer after completing the program.'
   },
   {
     id: 2,
-    name: 'John Doe',
-    img: '/Images/user2.jpg',
+    name: 'Deepti',
+    img: '/Images/deepti.jpeg',
     review: 'I had a great experience with Tech Academy. The instructors were very knowledgeable and supportive. I learned a lot and was able to land a job as a software engineer after completing the program.'
   },
   {
     id: 3,
-    name: 'John Doe',
-    img: '/Images/user1.jpg',
+    name: 'Guddu Kumar',
+    img: '/Images/Guddu.png',
     review: 'I had a great experience with Tech Academy. The instructors were very knowledgeable and supportive. I learned a lot and was able to land a job as a software engineer after completing the program.'
   },
   {
